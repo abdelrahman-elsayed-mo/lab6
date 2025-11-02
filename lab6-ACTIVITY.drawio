@@ -1,0 +1,171 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="earning-certificate-with-details-diagram" name="Earning a Certificate (Detailed)">
+    <mxGraphModel dx="1426" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="startNode" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;fontColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="390" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="activityCompleteLesson" value="Student Completes Course Lesson" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="330" y="100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="activityCompleteQuiz" value="Student Completes Quiz" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="330" y="190" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="activityUpdateAnalytics" value="Update Analytics Module (Quiz Grade, Time Spent)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="500" y="190" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="decisionLessons" value="All Lessons Complete?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="350" y="290" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="decisionQuizzes" value="All Quizzes Passed?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="350" y="400" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="activityCertService" value="CourseService: Check &amp;amp; Generate Certificate" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="310" y="500" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SEPkd1eCZLE-nOL1vVED-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="forkBar" target="activityStoreJson" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="600" />
+              <mxPoint x="500" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SEPkd1eCZLE-nOL1vVED-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="forkBar" target="activityGenerate" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="600" />
+              <mxPoint x="295" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="forkBar" value="" style="html=1;strokeWidth=4;whiteSpace=wrap;shape=line;fillColor=#000000;strokeColor=#000000;direction=south;" parent="1" vertex="1">
+          <mxGeometry x="345" y="580" width="120" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="activityGenerate" value="Generate Certificate Document" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="220" y="620" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="activityStoreJson" value="JsonDBManager: Store Certificate (JSON)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#fce5cd;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="400" y="620" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="joinBar" value="" style="html=1;strokeWidth=4;whiteSpace=wrap;shape=line;fillColor=#000000;strokeColor=#000000;direction=south;" parent="1" vertex="1">
+          <mxGeometry x="345" y="720" width="120" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="activityNotify" value="Notify Student of Certificate Availability" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="330" y="790" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="endNode" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="390" y="870" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="endNodeNo1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="550" y="310" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="endNodeNo2" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="550" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="startNode" target="activityCompleteLesson" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="70" as="sourcePoint" />
+            <mxPoint x="405" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="activityCompleteLesson" target="activityCompleteQuiz" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="160" as="sourcePoint" />
+            <mxPoint x="405" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_quiz_analytics" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="activityCompleteQuiz" target="activityUpdateAnalytics" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_analytics_decision" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="activityUpdateAnalytics" target="decisionLessons" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="250" as="sourcePoint" />
+            <mxPoint x="405" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="270" />
+              <mxPoint x="405" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3_alt" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="activityCompleteQuiz" target="decisionLessons" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="250" as="sourcePoint" />
+            <mxPoint x="405" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4_yes" value="[Yes]" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="decisionLessons" target="decisionQuizzes" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="360" as="sourcePoint" />
+            <mxPoint x="405" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4_no" value="[No]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="decisionLessons" target="endNodeNo1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="325" as="sourcePoint" />
+            <mxPoint x="550" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5_yes" value="[Yes]" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="decisionQuizzes" target="activityCertService" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="470" as="sourcePoint" />
+            <mxPoint x="405" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5_no" value="[No]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="decisionQuizzes" target="endNodeNo2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="435" as="sourcePoint" />
+            <mxPoint x="550" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_certService_fork" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="activityCertService" target="forkBar" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="560" as="sourcePoint" />
+            <mxPoint x="405" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7_1" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="activityGenerate" target="joinBar" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="295" y="680" as="sourcePoint" />
+            <mxPoint x="295" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="295" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7_2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="activityStoreJson" target="joinBar" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="680" as="sourcePoint" />
+            <mxPoint x="500" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="joinBar" target="activityNotify" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="730" as="sourcePoint" />
+            <mxPoint x="405" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="activityNotify" target="endNode" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="830" as="sourcePoint" />
+            <mxPoint x="405" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SEPkd1eCZLE-nOL1vVED-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry y="910" width="850" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="SEPkd1eCZLE-nOL1vVED-6" value="&lt;h1&gt;&lt;b&gt;Explanation:&lt;/b&gt;&lt;br&gt;This Activity Diagram illustrates process of a a student certificate in parallel SkillForge system. It details a CourseService for JsonDBManager. It depicts the integration and data flow between various system components.&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="940" width="690" height="109" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
